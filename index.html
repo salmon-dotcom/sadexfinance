@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadexfinance - Выгодный обмен валют в Душанбе</title>
+    <meta name="description" content="Обмен валют USDT, USD, EUR, TJS, TRY, RUB по лучшим курсам в Душанбе. Быстро, безопасно, выгодно.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Sadexfinance.tj/">
+    <meta property="og:title" content="Sadexfinance - Выгодный обмен валют в Душанбе">
+    <meta property="og:description" content="Обмен валют USDT, USD, EUR, TJS, TRY, RUB по лучшим курсам в Душанбе">
+    <meta property="og:image" content="/static/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://Sadexfinance.tj/">
+    <meta property="twitter:title" content="Sadexfinance - Выгодный обмен валют в Душанбе">
+    <meta property="twitter:description" content="Обмен валют USDT, USD, EUR, TJS, TRY, RUB по лучшим курсам в Душанбе">
+    <meta property="twitter:image" content="/static/images/og-image.jpg">
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-B_SY1GJM.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            light: '#00635A',
+                            dark: '#0F2F2A'
+                        },
+                        accent: {
+                            light: '#00C8A4',
+                            dark: '#00E6B8'
+                        },
+                        background: {
+                            light: '#F8F8F8',
+                            dark: '#111827'
+                        },
+                        text: {
+                            light: '#1E1E1E',
+                            dark: '#E5E7EB'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DstZaIZO.css">
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark transition-colors duration-300">
+    <!-- Loading Spinner -->
+    <div id="loading-spinner" class="fixed inset-0 bg-white dark:bg-gray-900 z-50 flex items-center justify-center">
+        <div class="animate-spin rounded-full h-16 w-16 border-b-2 border-primary-light dark:border-accent-dark"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white dark:bg-gray-800 shadow-lg sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-r from-primary-light to-accent-light rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">$</span>
+                    </div>
+                    <h1 class="text-2xl font-bold text-primary-light dark:text-accent-dark">Sadexfinance</h1>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="/" class="text-primary-light dark:text-accent-dark font-semibold border-b-2 border-accent-light">Главная</a>
+                    <a href="/office.html" class="hover:text-primary-light dark:hover:text-accent-dark transition-colors">Наш офис</a>
+                    <a href="/about.html" class="hover:text-primary-light dark:hover:text-accent-dark transition-colors">О компании</a>
+                    <a href="/contacts.html" class="hover:text-primary-light dark:hover:text-accent-dark transition-colors">Контакты</a>
+                </nav>
+
+                <!-- Theme Switcher & Mobile Menu -->
+                <div class="flex items-center space-x-4">
+                    <button id="theme-toggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                        <svg class="w-5 h-5 text-yellow-500 dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-gray-300 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                    </button>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-toggle" class="md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 border-t pt-4">
+                <nav class="flex flex-col space-y-4">
+                    <a href="/" class="text-primary-light dark:text-accent-dark font-semibold">Главная</a>
+                    <a href="/office.html" class="hover:text-primary-light dark:hover:text-accent-dark transition-colors">Наш офис</a>
+                    <a href="/about.html" class="hover:text-primary-light dark:hover:text-accent-dark transition-colors">О компании</a>
+                    <a href="/contacts.html" class="hover:text-primary-light dark:hover:text-accent-dark transition-colors">Контакты</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-primary-light via-primary-light to-accent-light dark:from-primary-dark dark:via-primary-dark dark:to-accent-dark">
+        <div class="container mx-auto px-4 py-20">
+            <div class="text-center text-white">
+                <h2 class="text-5xl md:text-6xl font-bold mb-6">
+                    Выгодный обмен валют<br>в Душанбе
+                </h2>
+                <p class="text-xl md:text-2xl mb-8 opacity-90">
+                    Лучшие курсы • Быстрое обслуживание • 100% безопасность
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-white text-primary-light px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors">
+                        Посмотреть курсы
+                    </button>
+                    <a href="/contacts.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary-light transition-colors">
+                        Связаться с нами
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Currency Availability Notice -->
+    <div id="availability-notice" class="bg-yellow-100 dark:bg-yellow-900 border-l-4 border-yellow-500 p-4 mx-4 mt-4 rounded hidden">
+        <div class="flex">
+            <div class="flex-shrink-0">
+                <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3">
+                <p class="text-sm text-yellow-700 dark:text-yellow-200">
+                    <strong>Внимание:</strong> Некоторые валюты временно недоступны. Показаны только доступные для обмена валюты.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toggle Available Switch -->
+    <div class="container mx-auto px-4 py-6">
+        <div class="flex justify-between items-center">
+            <h3 class="text-2xl font-bold text-primary-light dark:text-accent-dark">Курсы валют</h3>
+            <div class="flex items-center space-x-3">
+                <span class="text-sm text-gray-600 dark:text-gray-400">Показать только доступные</span>
+                <label class="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" id="toggle-available" class="sr-only peer">
+                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-accent-light/25 dark:peer-focus:ring-accent-dark/25 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-accent-light dark:peer-checked:bg-accent-dark"></div>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Currency Cards -->
+    <section class="container mx-auto px-4 pb-16">
+        <div id="currency-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Currency cards will be dynamically generated here -->
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="bg-gray-50 dark:bg-gray-800 py-16">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 text-primary-light dark:text-accent-dark">
+                Отзывы наших клиентов
+            </h3>
+            
+            <div class="relative">
+                <!-- Review Slider Container -->
+                <div id="review-slider" class="overflow-hidden">
+                    <div id="review-track" class="flex transition-transform duration-500 ease-in-out">
+                        <!-- Reviews will be dynamically loaded -->
+                    </div>
+                </div>
+                
+                <!-- Navigation Buttons -->
+                <button id="prev-review" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white dark:bg-gray-700 p-3 rounded-full shadow-lg hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                <button id="next-review" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white dark:bg-gray-700 p-3 rounded-full shadow-lg hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Dots Indicator -->
+            <div id="review-dots" class="flex justify-center space-x-2 mt-8">
+                <!-- Dots will be dynamically generated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-primary-light dark:bg-primary-dark py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold text-white mb-6">
+                Готовы обменять валюту?
+            </h3>
+            <p class="text-xl text-white opacity-90 mb-8">
+                Посетите наш офис или свяжитесь с нами для получения актуальных курсов
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/office.html" class="bg-white text-primary-light px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors">
+                    Найти наш офис
+                </a>
+                <a href="/contacts.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary-light transition-colors">
+                    Связаться с нами
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-primary-light to-accent-light rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold">$</span>
+                        </div>
+                        <h4 class="text-xl font-bold">Sadexfinance</h4>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Ваш надежный партнер в обмене валют. Работаем честно и прозрачно с 2020 года.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h5 class="font-bold mb-4">Быстрые ссылки</h5>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="text-gray-400 hover:text-white transition-colors">Главная</a></li>
+                        <li><a href="/office.html" class="text-gray-400 hover:text-white transition-colors">Наш офис</a></li>
+                        <li><a href="/about.html" class="text-gray-400 hover:text-white transition-colors">О компании</a></li>
+                        <li><a href="/contacts.html" class="text-gray-400 hover:text-white transition-colors">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h5 class="font-bold mb-4">Услуги</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Обмен USDT</li>
+                        <li>Обмен USD</li>
+                        <li>Обмен EUR</li>
+                        <li>Обмен TJS</li>
+                        <li>Обмен TRY</li>
+                        <li>Обмен RUB</li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h5 class="font-bold mb-4">Контакты</h5>
+                    <div class="space-y-2 text-gray-400">
+                        <p>📱 WhatsApp: + 7 977 430 2007</p>
+                        <p>📧 Email: info@Sadexfinance.tj</p>
+                        <p>🏢 Адрес: Фуд Сити 2 Этаж 9 Линия 89 Павилион   </p>
+                        <p>🕐 Режим работы: 9:00 - 18:00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 mt-8 text-center text-gray-400">
+                <p>&copy; 2025 Sadexfinance. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Error Message -->
+    <div id="error-message" class="fixed bottom-4 right-4 bg-red-500 text-white px-6 py-4 rounded-lg shadow-lg hidden">
+        <div class="flex items-center space-x-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+            </svg>
+            <span id="error-text">Произошла ошибка</span>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/static/js/scripts.js"></script>
+    <script src="/static/js/toggle-available.js"></script>
+    <script src="/static/js/review-slider.js"></script>
+    <script src="/static/js/theme-switcher.js"></script>
+</body>
+</html>
